@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AMM Chatbot powered by AI, providing insights and support on Automated Market Makers.">
+    <meta name="keywords" content="Chatbot, AMM, Automated Market Makers, AI, Market, Crypto">
+    <meta name="author" content="Your Name or Project Team">
+    <title>AMM Chatbot</title>
+    <link rel="stylesheet" href="./chatbot.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="chat-container">
+        <header>
+            <h1>AMM Chatbot</h1>
+        </header>
+        <main>
+            <div id="chat-window">
+                <div id="messages"></div>
+                <div id="typing-indicator" aria-live="polite">The bot is typing...</div>
+            </div>
+        </main>
+        <footer>
+            <div id="chat-input-container">
+                <input id="chat-input" type="text" placeholder="Type your message here..." aria-label="Chat input">
+                <button id="send-button" aria-label="Send message">Send</button>
+            </div>
+        </footer>
+    </div>
+    <button id="scroll-to-bottom" title="Scroll to bottom" aria-label="Scroll to bottom">⬇</button>
+    <script src="./chatbot.js" type="module"></script>
+</body>
+</html>

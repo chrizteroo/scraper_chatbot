@@ -1,0 +1,49 @@
+{
+  "name": "scraper_chatbot",
+  "version": "1.0.0",
+  "description": "A chatbot application powered by OpenAI with web scraping functionality.",
+  "main": "chatbot/server.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node chatbot/server.js",
+    "dev": "nodemon chatbot/server.js",
+    "scrape-sitemaps": "node scraper/sitemap_scraper.js",
+    "clean-urls": "node scraper/cleaner.js",
+    "scrape-content": "node scraper/content_scraper.js",
+    "scrape-all": "yarn scrape-sitemaps && yarn clean-urls && yarn scrape-content",
+    "build": "echo 'Static files prepared for deployment'"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "body-parser": "^1.20.3",
+    "cheerio": "^1.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.4.1",
+    "helmet": "^8.0.0",
+    "mark": "^0.10.0",
+    "morgan": "^1.10.0",
+    "openai": "^4.76.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "author": "Your Name or Team",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/scraper_chatbot.git"
+  },
+  "keywords": [
+    "chatbot",
+    "openai",
+    "web scraping",
+    "AMM",
+    "automated market makers",
+    "express",
+    "nodejs"
+  ]
+}
